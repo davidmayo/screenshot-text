@@ -1,0 +1,17 @@
+[project]
+name = "screenshot-text"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "David Mayo", email = "dcmayo@moreheadstate.edu" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+screenshot-text = "screenshot_text:main"
+
+[build-system]
+requires = ["uv_build>=0.11.0,<0.12.0"]
+build-backend = "uv_build"
