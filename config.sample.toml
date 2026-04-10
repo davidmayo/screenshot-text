@@ -1,0 +1,23 @@
+interval_seconds = 2.0
+
+[region]
+x = 100
+y = 200
+width = 800
+height = 300
+
+[ocr]
+lang = "eng"
+psm = 6
+
+[preprocess]
+grayscale = true
+upscale = 2
+threshold = 180
+invert = false
+
+[detection]
+require_stable_reads = 1
+
+[debug]
+# Optional: save_dir = "~/.cache/screenshot-text/debug"

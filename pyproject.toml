@@ -1,16 +1,20 @@
 [project]
 name = "screenshot-text"
 version = "0.1.0"
-description = "Add your description here"
+description = "Ubuntu utility for selecting a screen region and OCRing it on a loop"
 readme = "README.md"
 authors = [
     { name = "David Mayo", email = "dcmayo@moreheadstate.edu" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.11"
+dependencies = [
+    "mss>=10.1.0",
+    "Pillow>=11.2.1",
+    "pytesseract>=0.3.13",
+]
 
 [project.scripts]
-screenshot-text = "screenshot_text:main"
+screenshot-text = "screenshot_text.main:main"
 
 [build-system]
 requires = ["uv_build>=0.11.0,<0.12.0"]
